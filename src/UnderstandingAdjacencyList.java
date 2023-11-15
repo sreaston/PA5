@@ -1,0 +1,33 @@
+
+
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.LinkedList;
+
+public class UnderstandingAdjacencyList {
+
+	static void play() throws FileNotFoundException {
+
+		Graph g = new Graph();
+		String file = "directed1.txt";
+		g.readUnweightedGraph(file);
+
+		ArrayList<ArrayList<Edge>> adjList = g.adjList;
+		int n = g.adjList.size();
+		for (int i = 0; i < n; i++) {
+			ArrayList<Edge> row = adjList.get(i);
+			System.out.print("Outgoing edges of vertex " + i + ": ");
+			Iterator<Edge> it = row.iterator();
+			while (it.hasNext()) {
+				System.out.print(it.next() + " ");
+			}
+			System.out.println();
+		}
+
+	}
+
+	public static void main(String[] args) throws FileNotFoundException {
+		play();
+	}
+}

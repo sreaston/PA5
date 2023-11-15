@@ -1,0 +1,82 @@
+*** Test Tree Traversals ***
+
+Pre-order Traversal: 22 8 14 0 6 5 70 20 11 16 24 8 20
+In-order Traversal: 0 14 5 6 70 8 20 11 22 24 16 8 20
+Post-order Traversal: 0 5 70 6 14 11 20 8 24 20 8 16 22
+
+*** Using Set & Map ***
+
+Sorted order of [a, b, r, a, c, a, d, a, b, r, a, $] is [$, a, a, a, a, a, b, b, c, d, r, r]
+* Set Intersection *
+
+Set 1: [xyz, abc, def, efg, ghi, xyz, abc, abc, ghixx]
+Set 2: [ghi, abc, def, ghix, eff, xyz, xyw, abcxyz]
+Intersection is: [abc, def, xyz, ghi]
+
+*** Test Topo 1 ***
+
+Topological order: [1, 0, 2, 4, 3]
+
+*** Test Topo 2 ***
+
+Topological order: []
+
+*** Test Topo 3 ***
+
+Topological order: [1, 3, 0, 5, 2, 6, 4]
+
+*** Test BFS on Directed Graph 1 ***
+
+Level array (from v0): [0, 1, 2, 1, 1, 2, 2]
+Level array (from v1): [1, 0, 1, 1, 2, 3, 2]
+Level array (from v2): [2, 1, 0, 1, 3, 3, 2]
+Level array (from v3): [1, 1, 1, 0, 2, 2, 1]
+Level array (from v4): [1, 2, 3, 2, 0, 1, 2]
+Level array (from v5): [2, 3, 3, 2, 1, 0, 1]
+Level array (from v6): [2, 2, 2, 1, 2, 1, 0]
+
+*** Test BFS on Directed Graph 2 ***
+
+Level array (from v0): [0, 1, 2, 1, infty, 2, infty]
+Level array (from v1): [1, 0, 1, 1, infty, 2, infty]
+Level array (from v2): [2, 1, 0, 1, infty, 2, infty]
+Level array (from v3): [1, 1, 1, 0, infty, 1, infty]
+Level array (from v4): [1, 2, 3, 2, 0, 1, 1]
+Level array (from v5): [2, 2, 2, 1, infty, 0, infty]
+Level array (from v6): [2, 3, 4, 3, 1, 2, 0]
+
+*** Test BFS on Undirected Graph 1 ***
+
+Level array (from v0): [0, infty, infty, infty, 1, 1, 1, infty]
+Level array (from v1): [infty, 0, 1, 1, infty, infty, infty, infty]
+Level array (from v2): [infty, 1, 0, 1, infty, infty, infty, infty]
+Level array (from v3): [infty, 1, 1, 0, infty, infty, infty, infty]
+Level array (from v4): [1, infty, infty, infty, 0, 2, 1, infty]
+Level array (from v5): [1, infty, infty, infty, 2, 0, 1, infty]
+Level array (from v6): [1, infty, infty, infty, 1, 1, 0, infty]
+Level array (from v7): [infty, infty, infty, infty, infty, infty, infty, 0]
+
+*** Test BFS on Undirected Graph 2 ***
+
+Level array (from v0): [0, 3, 4, 4, 1, 1, 2, infty, infty]
+
+Level array (from v1): [3, 0, 1, 1, 2, 2, 1, infty, infty]
+Level array (from v2): [4, 1, 0, 1, 3, 3, 2, infty, infty]
+Level array (from v3): [4, 1, 1, 0, 3, 3, 2, infty, infty]
+Level array (from v4): [1, 2, 3, 3, 0, 2, 1, infty, infty]
+Level array (from v5): [1, 2, 3, 3, 2, 0, 1, infty, infty]
+Level array (from v6): [2, 1, 2, 2, 1, 1, 0, infty, infty]
+Level array (from v7): [infty, infty, infty, infty, infty, infty, infty, 0, 1]
+Level array (from v8): [infty, infty, infty, infty, infty, infty, infty, 1, 0]
+
+*** Test Trie (Spell Checker) ***
+
+Dictionary: [abc$, abcd$, bce$, abx$, acfe$, bfr$, de$]
+Document: [abc, def, abcd, bce, abx, acfe, bfr, xyz, de, tyu, ab]
+Incorrect spellings: def xyz tyu ab
+
+* Set Intersection *
+
+Set 1: [xyz, abc, def, efg, ghi, xyz, abc, abc, ghixx]
+Set 2: [ghi, abc, def, ghix, eff, xyz, xyw, abcxyz]
+Intersection is: [abc, def, ghi, xyz]
